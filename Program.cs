@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
@@ -36,6 +36,7 @@ Console.ReadLine();
 
 //forced user dialouge (no need to type it themselves)
 Console.WriteLine("You:\"I'm not a tourist, I'm just lost\"");
+Console.ReadLine();
 
 // ask what month they got lost (in numbers)
 // convert the input string as a number to do math with it
@@ -70,12 +71,12 @@ var intothewoods = Console.ReadLine();
     
     if (intothewoods == "yes")
     {
-        Console.WriteLine("Be careful traveller! I can't promise that i'll help you in there" +
-            "Jerry kills you");  
+        Console.WriteLine("Jerry: \"Be careful traveller! I can't promise that i'll help you in there!\"" +
+            "Jerry kills you.");  
     }
-    else if (intothewoods != "yes") 
+    else if (intothewoods != "yes")
     {
-        Console.WriteLine("Smart choice, that place is scary.");
+        Console.WriteLine($"Jerry:\"Smart choice, that place is scary.\"");
     }
 }
 Console.ReadLine();
